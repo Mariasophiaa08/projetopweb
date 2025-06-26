@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metafit - Calculadora de Calorias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="toggleTheme">🌙 Modo Escuro</button>
+        <h1>Metafit</h1>
+        <p>Descubra suas necessidades calóricas diárias!</p>
+
+        <form id="calorieForm">
+            <label for="gender">Gênero:</label>
+            <select id="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="activity">Nível de Atividade:</label>
+            <select id="activity">
+                <option value="1.2">Sedentário</option>
+                <option value="1.375">Leve</option>
+                <option value="1.55">Moderado</option>
+                <option value="1.725">Intenso</option>
+                <option value="1.9">Muito Intenso</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
